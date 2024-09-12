@@ -1,0 +1,29 @@
+/* Icon Styles */
+.episode-buttons .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Space between icon and text */
+}
+
+.episode-buttons .btn i {
+    font-size: 1rem; /* Icon size */
+}
+
+/* Play Button */
+.btn-primary {
+    background-color: var(--accent-color); /* Blue button */
+    color: #FFF; /* White text */
+    border: none;
+}
+
+/* Bookmark Button */
+.bookmark-btn {
+    border-color: var(--accent-color); /* Border color */
+    color: var(--accent-color); /* Text color */
+}
+
+.bookmark-btn:hover {
+    background-color: var(--accent-color); /* Background color on hover */
+    color: #FFF; /* White text */
+}

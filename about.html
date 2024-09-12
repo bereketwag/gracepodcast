@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesabout.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+
+    <script>
+      fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('navbar').innerHTML = data;
+          });
+          fetch('footer.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('footer').innerHTML = data;
+          });
+      //------------------------------
+        
+    </script>
+
+
+    <!-- About Us Hero Section -->
+    <section class="about-hero-section text-center text-white">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h1 class="display-4">About Us</h1>
+            <p class="lead">Discover the story behind our podcast</p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Our Story</h2>
+                    <p>
+                        We started this podcast with a simple goal: to share meaningful conversations and insights with the world. 
+                        Over the years, we've grown into a community of passionate listeners and contributors. Our journey is fueled by 
+                        curiosity, creativity, and a relentless desire to explore new ideas.
+                    </p>
+                    <p>
+                        Whether it's discussing the latest trends, interviewing thought leaders, or diving deep into topics that matter, 
+                        we strive to bring you content that is not only informative but also engaging and entertaining.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/studio5.jpg" alt="Our Story" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team Section -->
+    <section class="meet-the-team-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Meet the Team</h2>
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-md-4 text-center">
+                    <img src="assets/bereket.jpg" alt="Team Member 1" class="img-fluid rounded-circle mb-3">
+                    <h5>John Doe</h5>
+                    <p>Host & Founder</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-md-4 text-center">
+                    <img src="assets/naz.jpg" alt="Team Member 2" class="img-fluid rounded-circle mb-3">
+                    <h5>Jane Smith</h5>
+                    <p>Co-Host</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="col-md-4 text-center">
+                    <img src="assets/dev.jpg" alt="Team Member 3" class="img-fluid rounded-circle mb-3">
+                    <h5>Michael Brown</h5>
+                    <p>Producer</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5">
+        <div class="container">
+            <h2 class="text-center">Gallery</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/studio2.jpg" alt="Gallery Image 1" class="img-fluid rounded mb-4">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/studio3.jpg" alt="Gallery Image 2" class="img-fluid rounded mb-4">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/studio4.jpg" alt="Gallery Image 3" class="img-fluid rounded mb-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leave a Message Section -->
+    <section class="leave-message-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Leave a Message</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="leaveMessageForm" action="submit_message.php" method="post">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Statistics Counter Section -->
+<section class="stats-counter py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Podcast in Numbers</h2>
+        <div class="row text-center">
+            <!-- Seasons Counter -->
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <i class="fas fa-calendar-alt fa-3x mb-2"></i>
+                    <h3 class="stat-number" data-number="15">0</h3>
+                    <p class="stat-label">Seasons</p>
+                </div>
+            </div>
+            <!-- Episodes Counter -->
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <i class="fas fa-podcast fa-3x mb-2"></i>
+                    <h3 class="stat-number" data-number="120">0</h3>
+                    <p class="stat-label">Episodes</p>
+                </div>
+            </div>
+            <!-- Guests Counter -->
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <i class="fas fa-user-friends fa-3x mb-2"></i>
+                    <h3 class="stat-number" data-number="45">0</h3>
+                    <p class="stat-label">Guests</p>
+                </div>
+            </div>
+            <!-- Hours Counter -->
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <i class="fas fa-hourglass-half fa-3x mb-2"></i>
+                    <h3 class="stat-number" data-number="500">0</h3>
+                    <p class="stat-label">Hours of Podcast</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Interactive Section -->
+    <section class="interactive-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Join the Conversation</h2>
+            <p class="text-center">We love hearing from our listeners. Whether you have questions, feedback, or just want to share your thoughts, don't hesitate to reach out. Connect with us on social media or leave a message below!</p>
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">Join Our Community</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="footer"></div>
+
+
+    
+
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

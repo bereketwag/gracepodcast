@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Hosting Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+
+   <script>
+     fetch('navbar.html')
+         .then(response => response.text())
+         .then(data => {
+             document.getElementById('navbar').innerHTML = data;
+         });
+         fetch('footer.html')
+         .then(response => response.text())
+         .then(data => {
+             document.getElementById('footer').innerHTML = data;
+         });
+     //------------------------------
+       
+   </script>
+    <!-- Hero-section -->
+   
+    <section class="hero-section text-white text-center">
+        <video autoplay muted loop class="hero-video">
+            <source src="assets/BG.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="display-4">Welcome to Grace PodCast</h1>
+                    <p class="lead">Your go-to platform for the latest podcasts and videos</p>
+                    <a href="#" class="btn btn-primary btn-lg">Listen Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Video and Description Section -->
+<section class="video-description-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Video Column -->
+            <div class="col-md-6">
+                <video autoplay muted loop class="custom-video">
+                    <source src="assets/Black and White Phone Mockup Webinar Promotion Instagram Story.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- Content Column -->
+            <div class="col-md-6">
+                <h2 class="section-title">Watch Our Latest Podcast Video</h2>
+                <p class="section-description">Explore in-depth discussions, interviews, and more in our latest video episode. Stay tuned for more exciting content.</p>
+                <a href="assets/sample-video.mp4" download class="btn btn-primary mt-3">
+                    <i class="fas fa-download"></i> Download the App
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Supported By Section -->
+<section class="supported-section py-5 text-center">
+    <div class="container">
+        <h5 class="supported-title">Supported by</h5>
+        <div class="row justify-content-center">
+            <div class="col-3 col-md-2">
+                <a href="#"><img src="assets/spotify.svg" alt="Spotify" class="supported-icon"></a>
+            </div>
+            <div class="col-3 col-md-2">
+                <a href="#"><img src="assets/youtube.svg" alt="YouTube" class="supported-icon"></a>
+            </div>
+            <div class="col-3 col-md-2">
+                <a href="#"><img src="assets/googlepod.svg" alt="Podcast" class="supported-icon"></a>
+            </div>
+            <div class="col-3 col-md-2">
+                <a href="#"><img src="assets/online.svg" alt="Google Podcast" class="supported-icon"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Statistics Counter Section -->
+<section class="stats-counter py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Podcast in Numbers</h2>
+        <div class="row text-center">
+            <!-- Seasons Counter -->
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <i class="fas fa-calendar-alt fa-3x mb-2"></i>
+                    <h3 class="stat-number" data-number="15">0</h3>
+                    <p class="stat-label">Seasons</p>
+                </div>
+            </div>
+            <!-- Episodes Counter -->
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <i class="fas fa-podcast fa-3x mb-2"></i>
+                    <h3 class="stat-number" data-number="120">0</h3>
+                    <p class="stat-label">Episodes</p>
+                </div>
+            </div>
+            <!-- Guests Counter -->
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <i class="fas fa-user-friends fa-3x mb-2"></i>
+                    <h3 class="stat-number" data-number="45">0</h3>
+                    <p class="stat-label">Guests</p>
+                </div>
+            </div>
+            <!-- Hours Counter -->
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <i class="fas fa-hourglass-half fa-3x mb-2"></i>
+                    <h3 class="stat-number" data-number="500">0</h3>
+                    <p class="stat-label">Hours of Podcast</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- latest-episodes -->
+  <section id="latest-episodes" class="latest-episodes py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Latest Episodes</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="episode-card">
+                    <img src="assets/e05.png" class="img-fluid" alt="Episode 1">
+                    <div class="episode-info">
+                        <h3>Episode Title 1</h3>
+                        <p class="episode-details">Season 1, Episode 5</p>
+                        <div class="episode-buttons">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-play"></i> Play
+                            </a>
+                            <button class="btn btn-outline-secondary bookmark-btn">
+                                <i class="fas fa-bookmark"></i> Bookmark
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="episode-card">
+                    <img src="assets/e06.png" class="img-fluid" alt="Episode 2">
+                    <div class="episode-info">
+                        <h3>Episode Title 2</h3>
+                        <p class="episode-details">Season 1, Episode 6</p>
+                        <div class="episode-buttons">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-play"></i> Play
+                            </a>
+                            <button class="btn btn-outline-secondary bookmark-btn">
+                                <i class="fas fa-bookmark"></i> Bookmark
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="episode-card">
+                    <img src="assets/e07.png" class="img-fluid" alt="Episode 3">
+                    <div class="episode-info">
+                        <h3>Episode Title 3</h3>
+                        <p class="episode-details">Season 1, Episode 7</p>
+                        <div class="episode-buttons">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-play"></i> Play
+                            </a>
+                            <button class="btn btn-outline-secondary bookmark-btn">
+                                <i class="fas fa-bookmark"></i> Bookmark
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="featured-podcasts" class="featured-podcasts py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Featured Podcasts</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="podcast-card">
+                    <img src="assets/p01.png" class="img-fluid" alt="Podcast 1">
+                    <div class="podcast-info">
+                        <h3>Podcast Title 1</h3>
+                        <p>A short description of the podcast goes here, giving an overview of its content and appeal.</p>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-play"></i> Listen
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fas fa-info-circle"></i> More Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="podcast-card">
+                    <img src="assets/p02.png" class="img-fluid" alt="Podcast 2">
+                    <div class="podcast-info">
+                        <h3>Podcast Title 2</h3>
+                        <p>A short description of the podcast goes here, giving an overview of its content and appeal.</p>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-play"></i> Listen
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fas fa-info-circle"></i> More Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="podcast-card">
+                    <img src="assets/p01.png" class="img-fluid" alt="Podcast 3">
+                    <div class="podcast-info">
+                        <h3>Podcast Title 3</h3>
+                        <p>A short description of the podcast goes here, giving an overview of its content and appeal.</p>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-play"></i> Listen
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fas fa-info-circle"></i> More Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="podcast-card">
+                    <img src="assets/p02.png" class="img-fluid" alt="Podcast 4">
+                    <div class="podcast-info">
+                        <h3>Podcast Title 4</h3>
+                        <p>A short description of the podcast goes here, giving an overview of its content and appeal.</p>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-play"></i> Listen
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fas fa-info-circle"></i> More Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="podcast-card">
+                    <img src="assets/p01.png" class="img-fluid" alt="Podcast 5">
+                    <div class="podcast-info">
+                        <h3>Podcast Title 5</h3>
+                        <p>A short description of the podcast goes here, giving an overview of its content and appeal.</p>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-play"></i> Listen
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fas fa-info-circle"></i> More Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="podcast-card">
+                    <img src="assets/p02.png" class="img-fluid" alt="Podcast 6">
+                    <div class="podcast-info">
+                        <h3>Podcast Title 6</h3>
+                        <p>A short description of the podcast goes here, giving an overview of its content and appeal.</p>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-play"></i> Listen
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fas fa-info-circle"></i> More Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="quiz-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Test Your Knowledge</h2>
+        <form id="quizForm">
+            <div class="quiz-question mb-4">
+                <h4>Question 1: What was the topic of our latest episode?</h4>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" id="option1" value="option1">
+                    <label class="form-check-label" for="option1">About Ethiopia</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" id="option2" value="option2">
+                    <label class="form-check-label" for="option2">About Youth</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" id="option2" value="option2">
+                    <label class="form-check-label" for="option2">About Marriage</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" id="option2" value="option2">
+                    <label class="form-check-label" for="option2">about Self Esteem 2</label>
+                </div>
+            </div>
+            <!-- Additional questions here -->
+            <button type="submit" class="btn btn-primary">Submit Answers</button>
+        </form>
+        <div class="quiz-results mt-5" style="display: none;">
+            <h4>Your Score: <span id="score">0</span>/5</h4>
+            <button class="btn btn-secondary" onclick="shareScore()">Share Your Score</button>
+        </div>
+    </div>
+</section>
+
+
+<section class="interaction-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Join the Discussion</h2>
+        <div class="comment-box">
+            <h4>Leave a Comment</h4>
+            <form id="commentForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="4" placeholder="Your Comment" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="comments-list mt-5">
+            <h4>Recent Comments</h4>
+            <div class="comment">
+                <strong>John Doe</strong>
+                <p>Great episode! Loved the insights.</p>
+            </div>
+            <div class="comment">
+                <strong>Jane Smith</strong>
+                <p>Looking forward to the next one!</p>
+            </div>
+            <!-- More comments here -->
+        </div>
+    </div>
+</section>
+
+
+<!-- Upcoming Events Section -->
+<section class="upcoming-events py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Upcoming Events</h2>
+        <div class="row">
+            <!-- Event Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="event-card">
+                    <img src="assets/event01.png" alt="Event 1" class="event-img">
+                    <div class="event-content p-3">
+                        <h4 class="event-title">Live Podcast Recording</h4>
+                        <p class="event-date">September 15, 2024</p>
+                        <p class="event-description">Join us for a live recording of our latest podcast episode. Experience the excitement and engage with our hosts!</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Event Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="event-card">
+                    <img src="assets/event02.png" alt="Event 2" class="event-img">
+                    <div class="event-content p-3">
+                        <h4 class="event-title">Podcast Q&A Session</h4>
+                        <p class="event-date">October 5, 2024</p>
+                        <p class="event-description">Have questions about our podcasts? Join our live Q&A session and get answers directly from our hosts.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Event Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="event-card">
+                    <img src="assets/event03.png" alt="Event 3" class="event-img">
+                    <div class="event-content p-3">
+                        <h4 class="event-title">Special Guest Interview</h4>
+                        <p class="event-date">November 20, 2024</p>
+                        <p class="event-description">Don't miss our exclusive interview with a special guest. Get insights and stories from the world of podcasting.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div id="footer"></div>
+
+
+    
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

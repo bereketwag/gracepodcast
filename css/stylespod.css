@@ -1,0 +1,106 @@
+/* General Styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Podcast Card Styles */
+.podcast-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.podcast-card:hover {
+    transform: translateY(-5px);
+}
+
+.podcast-image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.podcast-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.podcast-card:hover .podcast-image {
+    transform: scale(1.1);
+}
+
+.podcast-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: #fff;
+    padding: 20px;
+}
+
+.podcast-title {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.podcast-description {
+    font-size: 0.9rem;
+    margin: 10px 0 0;
+}
+
+/* Podcast Actions */
+.podcast-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.podcast-actions .btn {
+    font-size: 0.9rem;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.podcast-actions .btn-primary {
+    background-color: #6e1df2;
+    border-color: #6e1df2;
+    color: #fff;
+}
+
+.podcast-actions .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+}
+
+.podcast-actions .btn-light {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #6c757d;
+}
+
+/* Responsive Grid Design */
+@media (max-width: 767px) {
+    .podcast-image {
+        height: 200px;
+    }
+
+    .podcast-info {
+        padding: 15px;
+    }
+
+    .podcast-actions {
+        flex-direction: column;
+    }
+
+    .podcast-actions .btn {
+        margin: 5px 0;
+        width: 100%;
+    }
+}

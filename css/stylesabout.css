@@ -1,0 +1,136 @@
+/* About Us Hero Section */
+.about-hero-section {
+    background-image: url('../assets/studio.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-hero-section .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.about-hero-section .container {
+    z-index: 2;
+}
+
+.about-hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.about-hero-section p {
+    font-size: 1.5rem;
+    color: #ddd;
+}
+
+/* Our Story Section */
+.our-story-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.our-story-section p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.our-story-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Meet the Team Section */
+.meet-the-team-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.meet-the-team-section .social-icons a {
+    color: #555;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.meet-the-team-section .social-icons a:hover {
+    color: #007bff;
+}
+
+/* Gallery Section */
+.gallery-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.gallery-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Leave a Message Section */
+.leave-message-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.leave-message-section .form-control {
+    border-radius: 0;
+}
+
+.leave-message-section .btn {
+    border-radius: 0;
+}
+
+/* Achievements Section */
+.achievements-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.achievements-section i {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.achievements-section h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+/* Interactive Section */
+.interactive-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.interactive-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.interactive-section .btn {
+    font-size: 1.2rem;
+    border-radius: 0;
+}
